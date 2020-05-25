@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="css/tailwindproduccion.css">
         <link rel="stylesheet" href="css/fontawesome/css/all.css">
         <link rel="stylesheet" href="css/animate.css">
+        <link rel="icon" href="svg/logo6.png">
     </head>
     <body>
         <div class="flex flex-row justify-center items-center w-screen h-screen bg-gray-200">
@@ -23,7 +24,7 @@
                             class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                             id="username"
                             type="text"
-                            placeholder="usuario"
+                            placeholder="inputcontrasena"
                         >
                     </div>
                     <div class="mb-6">
@@ -32,18 +33,22 @@
                         </label>
                         <input
                             class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
-                            id="contraseña"
+                            id="inputcontrasena"
                             type="password"
                             placeholder="******************"
                         >
                     </div>
                     <div class="flex items-center justify-center">
-                        <button class="bg-black hover:bg-gray-300 hover:text-gray-900 text-white w-12 h-12 rounded-full focus:outline-none focus:shadow-outline" type="button">
+                        <button class="bg-black hover:bg-gray-300 hover:text-gray-900 text-white w-12 h-12 rounded-full focus:outline-none focus:shadow-outline" type="button"
+                        onclick="validarUsuario();" >
                             <i class="fad fa-arrow-right"></i>
                         </button>
                     </div>
                 </form>
             </div>
         </div>
+        <script src="js/jquery-3.3.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+        <script src="js/usuariosJS.js"></script>
     </body>
 </html>
